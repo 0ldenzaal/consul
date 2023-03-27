@@ -801,7 +801,7 @@ body > header,
 
 .locale .locale-form {
 
-  @include breakpoint(small only) {
+  @include breakpoint(small-only) {
     padding-left: $line-height / 4;
   }
 }
@@ -1198,8 +1198,12 @@ footer {
   }
 
   h1 {
-    font-size: rem-calc(60);
+    font-size: rem-calc(48);
     padding: $line-height * 2 0 $line-height;
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(60);
+    }
   }
 
   h1,
@@ -1261,28 +1265,6 @@ footer {
   &.groups {
     min-height: 0;
     padding-top: 0;
-  }
-}
-
-.budget-header .budgets-index,
-.budget-group-show,
-.budget-groups-index,
-.budget-ballot-show {
-
-  > header {
-
-    &::before {
-      left: 0;
-      right: 0;
-    }
-  }
-}
-
-.budget-header {
-
-  &::before {
-    left: 0;
-    right: 0;
   }
 }
 
@@ -1693,13 +1675,6 @@ footer {
       height: auto;
     }
   }
-
-  .investments-list-item {
-
-    h3 {
-      word-wrap: break-word;
-    }
-  }
 }
 
 .budget-investment-new .header {
@@ -1722,6 +1697,11 @@ footer {
   .back {
     margin-top: $line-height;
   }
+}
+
+.budget-info-section {
+  padding: $line-height * 2 0 $line-height * 1.5;
+  text-align: center;
 }
 
 // 5. Legislation
