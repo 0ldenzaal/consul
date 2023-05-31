@@ -58,3 +58,7 @@ en:
       vote_registered: "Your vote has been registered correctly."
   shared:
     expired: "Expired"
+  layouts:
+    footer:
+      contact_title: "Contact us"
+      contact_email: "info@oldenzaal.nl"
