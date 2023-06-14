@@ -1,5 +1,6 @@
 //
 // 0. Global styles
+// 1. Budgets
 //
 
 
@@ -14,4 +15,47 @@ h4,
 p,
 a {
   font-family: "Arial", "Montserrat", sans-serif !important;
+}
+
+h1 {
+  color: $brand;
+}
+
+.auth-page {
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    padding-top: $line-height * 2;
+  }
+}
+
+.home-page .jumbo {
+
+  @include breakpoint(large) {
+    h1 {
+      font-size: rem-calc(48);
+    }
+  }
+}
+
+.footer {
+  background: $brand;
+}
+
+.home-page .card a,
+.custom-page .card a {
+  background: #dcecf2;
+}
+
+// 1. Budgets
+// --------------------
+
+.budget-info {
+
+  .single-heading h2,
+  .heading-amount {
+    font-size: rem-calc(36);
+  }
 }
