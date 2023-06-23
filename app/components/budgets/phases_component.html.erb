@@ -52,12 +52,10 @@
               <%= link_to phase.main_link_text, phase.main_link_url, class: "main-link" %>
             <% end %>
           </div>
-
-          <% if phase.image.present? %>
-            <div class="budget-phase-image">
-              <%= image_tag phase.image.variant(:large), alt: "" %>
-            </div>
-          <% end %>
+          <div class="budget-phase-image">
+            <%= render "shared/budgets_phase_video", budget: budget,
+                        phases: phases, phase: phase %>
+          </div>
         </div>
       </div>
     <% end %>
