@@ -3,6 +3,8 @@
     <%= back_link_to budgets_path %>
 
     <%= header %>
+
+    <%= render "/budgets/investments/recommendations" %>
   </div>
 
   <%= render "/budgets/investments/form", form_url: budget_investments_path(budget) %>
