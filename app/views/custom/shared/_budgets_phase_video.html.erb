@@ -6,6 +6,13 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
   </div>
+<% elsif budget.name == "Wijkplan Glinde-Hooiland" && phase.name == "Wijkbijeenkomst" %>
+  <div style="padding-top: 80px;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eliYs7ZF5nU?si=_usZhu9mf6X4bI64"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+  </div>
 <% elsif phase.image.present? %>
   <%= link_to phase.image.attachment, target: "_blank" do %>
     <%= image_tag phase.image.attachment,
