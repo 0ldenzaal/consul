@@ -20,7 +20,6 @@
           <ul class="question-list no-bullet margin-top">
             <% poll.questions.sort_for_list.each_with_index do |question, index| %>
               <li>
-                <span class="question-list-label"><%= t("polls.question") %> <%= index + 1 %></span>
                 <%= question.title %>
               </li>
             <% end %>
