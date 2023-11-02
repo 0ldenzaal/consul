@@ -34,7 +34,7 @@ describe "Polls" do
       end
     end
 
-    scenario "Polls display list of questions" do
+    scenario "Polls display list of questions", :consul do
       poll = create(:poll, :with_image)
       question1 = create(:poll_question, :yes_no, poll: poll)
       question2 = create(:poll_question, :yes_no, poll: poll)
@@ -237,7 +237,7 @@ describe "Polls" do
       expect(page).to have_link("Awesome video", href: "youtube.com/watch?v=123")
     end
 
-    scenario "Lists questions from proposals as well as regular ones" do
+    scenario "Lists questions from proposals as well as regular ones", :consul do
       normal_question = create(:poll_question, poll: poll)
       proposal_question = create(:poll_question, poll: poll, proposal: create(:proposal))
 
