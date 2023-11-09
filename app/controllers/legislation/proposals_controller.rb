@@ -12,7 +12,7 @@ class Legislation::ProposalsController < Legislation::BaseController
 
   invisible_captcha only: [:create, :update], honeypot: :subtitle
 
-  has_orders %w[most_voted newest oldest], only: :show
+  has_orders %w[newest most_voted oldest], only: :show
 
   helper_method :resource_model, :resource_name
   respond_to :html, :js
