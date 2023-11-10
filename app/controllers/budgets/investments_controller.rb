@@ -31,7 +31,7 @@ module Budgets
 
     feature_flag :budgets
 
-    has_orders %w[most_voted newest oldest], only: :show
+    has_orders %w[newest most_voted oldest], only: :show
     has_orders ->(c) { c.instance_variable_get(:@budget).investments_orders }, only: :index
     has_filters ->(c) { c.instance_variable_get(:@budget).investments_filters }, only: [:index, :show, :suggest]
 
