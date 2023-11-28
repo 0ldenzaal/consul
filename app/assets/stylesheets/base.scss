@@ -21,6 +21,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import "font-awesome/icons";
 
+$link:       $anchor-color;
+$link-hover: $anchor-color-hover;
+
 html {
   font-size: unset;
 }
@@ -274,7 +277,7 @@ aside {
 .draft-panels {
 
   .draft-allegation .draft-text a {
-    color: $link;
+    color: $anchor-color;
   }
 
   .draft-allegation .draft-text h2 {
@@ -597,6 +600,17 @@ body > header,
   .menu {
     padding-left: $line-height / 2;
   }
+
+  .avatar {
+    margin-right: $line-height * 1.5;
+    position: relative;
+
+    .avatar-image {
+      position: absolute;
+      right: -48px;
+      top: -10px;
+    }
+  }
 }
 
 .menu-icon {
@@ -634,10 +648,10 @@ body > header,
 .subnavigation a {
   color: $text;
   font-size: 16px;
-  line-height: $line-height * 2;
   position: relative;
 
   @include breakpoint(medium) {
+    line-height: $line-height * 2;
 
     &.is-active {
       border-bottom: 0;
@@ -708,6 +722,10 @@ body > header,
         }
       }
 
+      > a::after {
+        border: 0;
+      }
+
       > a::before {
         border: inset 6px;
         border-bottom-width: 0;
@@ -765,14 +783,6 @@ body > header,
       padding: 0 $line-height / 2;
       width: 100%;
     }
-  }
-}
-
-.dropdown.menu > li {
-
-  &.is-dropdown-submenu-parent > a::after {
-    border-top-color: transparent;
-    margin-top: -8px;
   }
 }
 
@@ -1224,7 +1234,7 @@ footer {
   .callout {
 
     &.primary a {
-      color: $link;
+      color: $anchor-color;
     }
   }
 
@@ -1265,6 +1275,17 @@ footer {
   &.groups {
     min-height: 0;
     padding-top: 0;
+  }
+}
+
+.budget-header .budgets-index,
+.budget-group-show,
+.budget-groups-index,
+.budget-ballot-show {
+
+  > header {
+    margin-top: -$line-height;
+    padding-top: $line-height;
   }
 }
 
@@ -2210,9 +2231,13 @@ a {
 .comment-votes {
 
   .votes {
-    bottom: 6px;
+    bottom: 24px;
     position: absolute;
     right: 0;
+
+    @include breakpoint(medium) {
+      bottom: 6px;
+    }
 
     .like {
 
@@ -2298,10 +2323,6 @@ a {
   tr td {
     vertical-align: top;
   }
-}
-
-.admin .dropdown.menu > .is-dropdown-submenu-parent > a::after {
-  border-color: transparent;
 }
 
 .admin .menu.simple {
@@ -2594,11 +2615,11 @@ a {
   }
 
   .add-related-content {
-    color: $link;
+    color: $anchor-color;
     font-size: $small-font-size;
 
     &:hover {
-      color: $link-hover;
+      color: $anchor-color-hover;
       cursor: pointer;
       text-decoration: underline;
     }
@@ -2618,7 +2639,7 @@ a {
 
     &:not(.button) {
       display: block;
-      color: $link;
+      color: $anchor-color;
       position: relative;
 
       &::after {
@@ -2900,11 +2921,6 @@ a {
 
 .poll-more-info-answers {
 
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .column:nth-child(odd),
   .columns:nth-child(odd) {
     border-right: 0;
@@ -2977,6 +2993,28 @@ a {
 
     img {
       padding-top: rem-calc(100);
+    }
+
+    .button-facebook:hover {
+      background: #3b5998;
+    }
+
+    .button-google:hover {
+      background: #de4c34;
+    }
+
+    .button-twitter:hover {
+      background: #45b0e3;
+    }
+
+    .button-facebook:hover,
+    .button-google:hover,
+    .button-twitter:hover {
+      color: #fff;
+
+      &::before {
+        color: #fff;
+      }
     }
   }
 
