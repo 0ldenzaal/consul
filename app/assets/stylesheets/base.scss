@@ -2051,6 +2051,11 @@ a {
   }
 }
 
+.comments-box-container {
+  top: rem-calc(180) !important;
+  z-index: 1;
+}
+
 .comments-box-container .comment-meta .comment-votes {
   position: relative;
   width: 100%;
@@ -2127,6 +2132,10 @@ a {
 
   .calc-comments .comment-box {
     overflow: auto;
+  }
+
+  details:not([open]) .draft-panel .panel-title {
+    margin-top: rem-calc(120);
   }
 }
 
