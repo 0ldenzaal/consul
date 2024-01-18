@@ -63,3 +63,24 @@ h1 {
     font-size: rem-calc(36);
   }
 }
+
+.budget-phases .tabs-title.current-phase-tab [aria-selected="true"] {
+  &:hover {
+    color: #fff;
+
+    &::after {
+      border-left-color: $brand-secondary;
+    }
+  }
+}
+
+.budget-phases .phase-title.current-phase-tab a {
+
+  &:hover {
+    color: #000;
+
+    &::after {
+      border-left-color: #e6e6e6;
+    }
+  }
+}
