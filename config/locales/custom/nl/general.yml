@@ -504,6 +504,9 @@ nl:
   poll_questions:
     show:
       voted: "Je hebt %{answer} gestemd"
+    description:
+      unique: "Maximaal 1 antwoord te selecteren."
+      multiple: "Maximaal %{maximum} antwoorden te selecteren."
   proposal_notifications:
     new:
       title: "Stuur melding"
