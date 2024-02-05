@@ -53,6 +53,18 @@ h1 {
   background: #dcecf2;
 }
 
+.home-page .card,
+.custom-page .card {
+
+  &.budget .description {
+    margin-bottom: $line-height;
+
+    &::after {
+      background: none;
+    }
+  }
+}
+
 // 1. Budgets
 // --------------------
 
