@@ -1,8 +1,8 @@
 //
 // 0. Global styles
 // 1. Budgets
+// 2. Polls
 //
-
 
 // 0. Global styles
 // --------------------
@@ -83,4 +83,17 @@ h1 {
       border-left-color: #e6e6e6;
     }
   }
+}
+
+// 2. Polls
+// --------------------
+
+.poll-question h3,
+.question-list-label {
+  display: block;
+}
+
+.poll-question-answers form,
+.poll-question .button {
+  width: 100%;
 }
