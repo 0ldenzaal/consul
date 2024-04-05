@@ -5,7 +5,7 @@ describe Layout::FooterComponent do
     it "generates links that open in the same tab" do
       render_inline Layout::FooterComponent.new
 
-      page.find(".info") do |info|
+      page.all(".info").last do |info|
         expect(info).to have_css "a", count: 2
         expect(info).not_to have_css "a[target]"
       end
