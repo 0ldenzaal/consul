@@ -1,8 +1,11 @@
 nl:
   mailers:
+<<<<<<< HEAD
+    sincerely: "Groeten van Stem van Oldenzaal"
     config:
       notifications_link: "E-mail instellingen"
       unsubscribe_text: "Wil je niet meer deze mails ontvangen? Ga naar %{notifications} en vink \"%{notification}\" uit."
+      manage_email_subscriptions: "Wil je dit soort mails niet meer ontvangen? Verander dan hier je instellingen"
     already_confirmed:
       info: "Wij hebben vraag gekregen instructies te sturen om jouw account te bevestigen. Jouw account is al eerder bevestigd. Dit hoef je dus niet nog een keer te doen."
       new_password: "Als je je wachtwoord bent vergeten, kan je die opnieuw instellen door te klikken op de volgende link:"
@@ -10,6 +13,7 @@ nl:
     budget_investment_created:
       subject: "Bedankt voor het delen van je idee!"
       title: "Bedankt voor het delen van je idee!"
+      hi: "Beste <strong>%{author}</strong>,"
       intro: "Beste <strong>%{author}</strong>,"
       text: "Bedankt voor het delen van je idee <strong>%{investment}</strong> voor <strong>%{budget}</strong>."
       follow: "We houden je op de hoogte van het proces. Je kunt het proces volgen op <strong>%{link}</strong> en hier ook andere ideeën uit jouw buurt of wijk bekijken. Via de knop 'Deel idee op social media' onderaan deze mail kun jij je idee delen op social media."
@@ -19,27 +23,24 @@ nl:
     budget_investment_selected:
       subject: "Gefeliciteerd, idee '%{code}' gaat door naar de stemronde!"
       title: "Gefeliciteerd, jouw idee is door naar de stemronde!"
-      hi: "Beste deelnemer,"
+      hi: "Beste <strong>%{author}</strong>,"
       share: "Gefeliciteerd, jouw idee is door naar de stemronde. We hebben alle ideeën beoordeeld en vanaf nu kan er gestemd worden op jouw idee. Om zoveel mogelijk stemmen te krijgen, kun je je idee delen. Bijvoorbeeld op social media. Dat kan via de knop 'Deel je idee' onderaan deze mail. We wensen je veel succes!"
       share_button: "Deel je idee"
-      sincerely: "Groeten van Stem van Oldenzaal"
       thanks: "Bedankt voor het meedoen."
     budget_investment_unfeasible:
       subject: "Jouw idee is helaas niet door naar de stemronde"
       title: "Jouw idee gaat helaas niet naar de stemronde"
-      hi: "Beste deelnemer,"
+      hi: "Beste <strong>%{author}</strong>,"
       new: "We hebben alle ideeën beoordeeld. Helaas is jouw idee niet haalbaar en daarom niet door naar de stemronde. %{url} waarom je idee niet haalbaar is, staat op Stem van Oldenzaak bij jouw idee."
       new_href: "De uitleg"
       contact: "Heb je nog vragen? Mail dan naar %{email}."
       email: "info@oldenzaal.nl"
       sorry: "Bedankt voor het meedoen!"
-      sincerely: "Groeten van Stem van Oldenzaal"
     budget_investment_unselected:
       subject: "Jouw idee is helaas niet door naar de stemronde"
       title: "Jouw idee gaat helaas niet naar de stemronde"
-      hi: "Beste deelnemer,"
+      hi: "Beste <strong>%{author}</strong>,"
       thanks: "Helaas heeft je idee niet genoeg stemmen gekregen om door te gaan. Heel erg bedankt voor het delen van je idee."
-      sincerely: "Groeten van Stem van Oldenzaal"
     comment:
       subject: "Iemand heeft gereageerd op je idee %{commentable}"
       title: "Iemand heeft gereageerd op je idee"
@@ -53,7 +54,7 @@ nl:
     direct_message_for_receiver:
       subject: "Je hebt een nieuw privébericht ontvangen"
       title: "Je hebt een nieuw privébericht ontvangen."
-      intro: "Beste <strong>%{author}</strong>,"
+      hi: "Beste <strong>%{receiver}</strong>,"
       text: "Je hebt een nieuw privébericht ontvangen."
       unsubscribe: "Als je geen privéberichten wilt ontvangen, kijk dan eens bij %{account} en haal het vinkje weg bij 'ontvang e-mails over privéberichten'."
       unsubscribe_account: "Mijn profiel"
@@ -61,7 +62,7 @@ nl:
     direct_message_for_sender:
       subject: "Je hebt een privébericht gestuurd"
       title: "Je hebt een privébericht gestuurd"
-      intro: "Beste <strong>%{author}</strong>,"
+      hi: "Beste <strong>%{sender}</strong>,"
       text: "Je hebt het volgende privébericht gestuurd naar <strong>%{receiver}</strong>:"
       sincerely: "Groeten van Stem van Oldenzaal"
     user_invite:
@@ -72,6 +73,7 @@ nl:
       ignore: "Heb je deze uitnodiging ongevraagd ontvangen? Geen zorgen, dan kun je deze mail negeren."
       thanks: "Bedankt!"
     email_verification:
+      hi: "Beste <strong>%{user}</strong>,"
       subject: "Bevestig je e-mailadres"
       title: "Bevestig je account"
       text: "Welkom bij Stem van Oldenzaal! Voordat je mee kan doen op de website, moet je je account nog bevestigen"

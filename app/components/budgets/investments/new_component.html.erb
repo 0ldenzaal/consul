@@ -1,11 +1,11 @@
-<main class="budget-investment-new no-margin-top">
-  <div class="small-12 column light expand padding-top">
-    <%= back_link_to budgets_path %>
+<% provide :main_class, "budget-investment-new" %>
 
-    <%= header %>
+<div class="small-12 column light expand padding-top">
+  <%= back_link_to budgets_path %>
 
-    <%= render "/budgets/investments/recommendations" %>
-  </div>
+  <%= header %>
 
-  <%= render "/budgets/investments/form", form_url: budget_investments_path(budget) %>
-</main>
+  <%= render "/budgets/investments/recommendations" %>
+</div>
+
+<%= render "/budgets/investments/form", form_url: budget_investments_path(budget) %>
