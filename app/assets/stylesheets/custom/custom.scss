@@ -65,6 +65,13 @@ h1 {
   }
 }
 
+.fixed-mobile-content {
+
+  &.is-stuck {
+    top: $line-height * 6 !important;
+  }
+}
+
 // 1. Budgets
 // --------------------
 

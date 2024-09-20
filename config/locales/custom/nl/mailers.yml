@@ -1,6 +1,5 @@
 nl:
   mailers:
-<<<<<<< HEAD
     sincerely: "Groeten van Stem van Oldenzaal"
     config:
       notifications_link: "E-mail instellingen"
